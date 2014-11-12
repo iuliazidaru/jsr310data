@@ -5,11 +5,11 @@ jsr310data
 The project contains Sring converters for jsr310 classes. It is not currently added in maven repository, so, it must be compiled from sources.
 
 Usage
-
-```<dependency>
-			<groupId>ro.izi.jsr310</groupId>
-			<artifactId>data</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+```
+<dependency>
+	<groupId>ro.izi.jsr310</groupId>
+	<artifactId>data</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
 Use it in mongo configuration:
