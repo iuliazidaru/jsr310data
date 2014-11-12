@@ -6,14 +6,14 @@ The project contains Sring converters for jsr310 classes. It is not currently ad
 
 Usage
 
-<dependency>
+```<dependency>
 			<groupId>ro.izi.jsr310</groupId>
 			<artifactId>data</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 </dependency>
-
+```
 Use it in mongo configuration:
-
+```
 @Configuration
 @ConfigurationProperties
 public class MongoPersistenceConfiguration extends AbstractMongoConfiguration {
@@ -50,12 +50,11 @@ public class MongoPersistenceConfiguration extends AbstractMongoConfiguration {
 	    return new CustomConversions(converterList);
 	  }
 
-	 
 }
-
+```
 
 Use it in repository unit tests:
-
+```
 public class MongoMyRepositoryTest {
 
 	MongoOperations mongoOperations;
@@ -80,4 +79,4 @@ public class MongoMyRepositoryTest {
     	mongoOperations = new MongoTemplate(factory, converter);
       mongoMyRepository.setMongoOperations(mongoOperations);
     }
-    
+   ``` 
